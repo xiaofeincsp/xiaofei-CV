@@ -25,10 +25,10 @@ library(vitae)
  * Lead the global breeding team with purpose, trust, consistency, and credibility.
  * Have more than 10 years of experience in applied breeding pipeline management.
  * Manage multiple projects with approximately $3 Million every year.
+ * Master quantitative genetics, statistics and experimental design.
+ * Advanced ability to program in R to analyze data and develop tools.
  * Hands-on experience in processing large and complex breeding data.
- * Advanced ability to program in R to analyze data. 
- * Master statistics and experimental design.
-
+ 
 # Education
 
 ```{r}
