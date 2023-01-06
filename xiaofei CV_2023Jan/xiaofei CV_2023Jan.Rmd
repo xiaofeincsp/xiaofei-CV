@@ -56,6 +56,29 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
+# Certificates
+
+```{r}
+
+tribble(
+  ~ Name,
+  ~ Institution,
+  ~ Year,
+  'High Performance Leadership',
+  "eCornell-Cornell University",
+  "2020",
+  'Change Management',
+  "eCornell-Cornell University",
+  "2021",
+  'Executive Leadership',
+  "eCornell-Cornell University",
+  "2022"
+) %>%
+  detailed_entries(where = Year,
+                   with = Name,
+                   what = Institution) 
+```
+
 # Publications
 
 1.	Hernán Ceballos, Clair Hershey, Carlos Iglesias, __Xiaofei Zhang__ (2021) Fifty years of a public cassava breeding program: evolution of breeding objectives, methods, and decision‑making processes. _Theoretical and Applied Genetics_ (2021) 134:2335–2353.
@@ -63,7 +86,9 @@ tribble(
 1.	Prabin Bajgain, __Xiaofei Zhang__, James A. Anderson (2020) Dominance and G×E interaction effects improve genomic prediction and genetic gain in intermediate wheatgrass (Thinopyrum intermedium). _The Plant Genome_.
 1.	Steve Larson, Lee DeHaan, Jesse Poland, __Xiaofei Zhang__, Kevin Dorn, Traci Kantarski, James Anderson, Jeremy Schmutz, Jane Grimwood, Jerry Jenkins, Shengqiang Shu, Jared Crain, Matthew Robbins & Kevin Jensen. (2019) Genome mapping of quantitative trait loci (QTL) controlling domestication traits of intermediate wheatgrass (Thinopyrum intermedium). _Theoretical and Applied Genetics_ v132, 2325–2351.
 1.	Nidhi Rawat, Michael O. Pumphrey, Sixin Liu, __Xiaofei Zhang__, Vijay K. Tiwari, Harold N. Trick, William W. Bockus, Eduard Akhunov, James A. Anderson, and Bikram S. Gill. (2017) Wheat Fhb1 encodes a chimeric lectin with agglutinin domains and a pore-forming toxin-like domain conferring resistance to Fusarium head blight. _Nature Genetics_.
+1.	Traci Kantarski, Steve Larson, __Xiaofei Zhang__ (co-first author), Lee DeHaan, Justin Borevitz, James A. Anderson, Jesse Poland (2017). Development of the first consensus genetic map of intermediate wheatgrass (Thinopyrum intermedium) using genotyping-by-sequencing. _Theoretical and Applied Genetics_.
 1.	__Xiaofei Zhang__, Ahmad Sallam, Liangliang Gao, Traci Kantarski, Jesse Poland, Donald L. Wyse, Lee DeHaan, James A. Anderson. (2016) Establishment and optimization of genomic selection to accelerate the domestication of intermediate wheatgrass (Thinopyrum intermedium). _The Plant Genome_.
+1.	Michael Kantar, Catrin Tyl, Kevin Dorn, __Xiaofei Zhang__ (co-first author), Jacob Jungers, Joe Kaser, Rachel Schendel, James Eckberg, Bryan Runck, Mirko Bunzel, Nick Jordan, Robert Stupar, David Marks, James Anderson, Gregg Johnson, Craig Sheaffer, Tonya Schoenfuss, Baraem Ismail, George Heimpel, Donald Wyse. (2016) Perennial Grain and Oilseed Crops. _Annual Review of Plant Biology_.
 1. And more on [__Google Scholar__](https://scholar.google.com/citations?hl=en&authuser=2&user=FgNoRpYAAAAJ)
 
 ```{r}
@@ -87,7 +112,7 @@ if (FALSE){
 1.	__Xiaofei Zhang__, Ahmad Sallam, Liangliang Gao, Traci Kantarski, Jesse Poland, Donald L. Wyse, Lee DeHaan, James A. Anderson. (2016) Establishment and optimization of genomic selection to accelerate the domestication of intermediate wheatgrass (Thinopyrum intermedium). _The Plant Genome_.
 1.	Michael Kantar, Catrin Tyl, Kevin Dorn, __Xiaofei Zhang__ (co-first author), Jacob Jungers, Joe Kaser, Rachel Schendel, James Eckberg, Bryan Runck, Mirko Bunzel, Nick Jordan, Robert Stupar, David Marks, James Anderson, Gregg Johnson, Craig Sheaffer, Tonya Schoenfuss, Baraem Ismail, George Heimpel, Donald Wyse. (2016) Perennial Grain and Oilseed Crops. _Annual Review of Plant Biology_.
 1.	__Xiaofei Zhang__, Matthew N. Rouse, Itamar C. Nava, Yue Jin, James A. Anderson. Development and verification of wheat germplasm containing both Sr2 and Fhb1. _Molecular Breeding_ 36: 85.
-1.	Lee DeHaan, David Van Tassel, James Anderson, Sean Asselin, Richard Barnes, Gregory Baute, Douglas Cattani, Steve Culman, Kevin Dorn, Brent Hulke, Michael Kantar, Steve Larson, M. David Marks, Allison Miller, Jesse Poland, Damian Ravetta, Emily Rude, Matthew Ryan, Don Wyse, and __Xiaofei Zhang__, (2016) A pipeline strategy for crop domestication. _Crop Science_ 56:917–930. 
+1.	Lee DeHaan, David Van Tassel, James Anderson, Sean Asselin, Richard Barnes, Gregory Baute, Douglas Cattani, Steve Culman, Kevin Dorn, Brent Hulke, Michael Kantar, Steve Larson, M. David Marks, Allison Miller, Jesse Poland, Damian Ravetta, Emily Rude, Matthew Ryan, Don Wyse, and __Xiaofei Zhang__. (2016) A pipeline strategy for crop domestication. _Crop Science_ 56:917–930. 
 1.	Liangliang Gao, Josh Kielsmeirer-Cook, Prabin Bajgain, __Xiaofei Zhang__, Matthew N. Rouse, Shiaoman Chao, Yue Jin and James A. Anderson (2015) Development of genotyping by sequencing (GBS) and array derived SNP markers for stem rust resistance gene Sr42. _Molecular Breeding_.
 1.	__Xiaofei Zhang__, Jae-Bom Ohm, Steven Haring, Lee R. DeHaan, James A. Anderson (2015) Towards the understanding of end-use quality in intermediate wheatgrass (Thinopyrum intermedium): high-molecular-weight glutenin subunits, protein polymerization, and mixing characteristics. _Journal of Cereal Science_ 66: 81–88.
 1.	Guangbin Luo, __Xiaofei Zhang__, Yanlin Zhang, Wenlong Yang, Yiwen Li, Jiazhu Sun, Kehui Zhan, Aimin Zhang, Dongcheng Liu. (2015) Composition, variation, expression and evolution of low-molecular-weight glutenin subunit genes in Triticum urartu. _BMC Plant Biology_. 15:68.
@@ -100,5 +125,27 @@ if (FALSE){
 1.	__Xiaofei Zhang__, Dongcheng Liu, Wenlong Yang, Kunfan Liu, Jiazhu Sun, Xiaoli Guo, Yiwen Li, Daowen Wang, Hongqing Ling, Aimin Zhang (2011) Development of a new marker system for identifying the complex members of the low-molecular-weight glutenin subunit gene family in bread wheat (Triticum aestivum L.). _Theoretical and Applied Genetics_. 112: 1503-1516
 1.	Lingli Dong, __Xiaofei Zhang__ (co-first author), Dongcheng Liu, Huajie Fan, Jiazhu Sun, Zhongjuan Zhang, Huanju Qin, Bin Li, Shanting Hao, Zhensheng Li, Daowen Wang, Aimin Zhang, Hongqing Ling (2010) New insights into the organization, recombination, expression and functional mechanism of low molecular weight glutenin subunit genes in bread wheat. _PLoS ONE_. 5(10): e13548.")
 }
+```
+
+# References
+
+```{r}
+tribble(
+  ~ Name,
+  ~ Title,
+  ~ Contact,
+  'Jim Anderson, Ph.D.',
+  "Professor, Wheat Breeder, University of Minnesota",
+  "ander319@umn.edu",
+  'Craig Yencho, Ph.D.',
+  "William Neal Reynolds Distinguished Professor; Program Leader Sweetpotato and Potato Breeding and Genetics Programs, North Carolina State University",
+  "yencho@ncsu.edu",
+  'Lee DeHaan, Ph.D.',
+  "Director of Crop Improvement/Lead Scientist, Kernza® Domestication Program, The Land Institute",
+  "lrdehaan@gmail.com"
+) %>%
+  detailed_entries(where = Contact,
+                   with = Name,
+                   what = Title) 
 ```
 
