@@ -127,6 +127,27 @@ if (FALSE){
 }
 ```
 
+# Grants
+
+```{r}
+library(tibble)
+tribble(
+  ~ donor, ~ Year, ~ project, ~ Where,
+  "VINFUTURE FOUNDATION", "2023-27","Cassava breeding for CMD resistant, high starch content and erect plant type varieties", "1.0M USD",
+  "The Bill & Melinda Gates Foundation", "2022-26", "Mining useful alleles for climate change adaptation from CGIAR gene banks", "2.1M USD",
+  "CROP TO END Hunger Initiative, CGIAR", "2023-24","Upgrading infrastructure and facilities for accelerated breeding and genetic gain in cassava", "0.85M USD", 
+  "Tropical Crops Genetic Resources Institute, CATAS", "2022-24","Develop the molecular markers for cassava ID card", "0.2M USD",
+  "CGIAR", "2023", "Accelerate Breeding Initiative-Cassava", "2.1M USD",
+  "USAID", "2021-23","IITA-CIAT Cassava Improvement", "1.0M USD",
+  "The Bill & Melinda Gates Foundation", "2018-23", "NextGen Cassava", "2.0M USD",
+  "The Bill & Melinda Gates Foundation", "2018-23", "Breeding roots, tubers and banana products for end user preferences", "1.0M USD"
+
+
+) %>% 
+  detailed_entries(donor, Year, project, Where)
+```
+
+
 # References
 
 ```{r}
@@ -142,7 +163,10 @@ tribble(
   "yencho@ncsu.edu",
   'Lee DeHaan, Ph.D.',
   "Director of Crop Improvement/Lead Scientist, Kernza® Domestication Program, The Land Institute",
-  "lrdehaan@gmail.com"
+  "lrdehaan@gmail.com",
+  'Joe Tohme, Ph.D.',
+  "Lever Director, Breeding Lead, Alliance Bioversity-CIAT, CGIAR",
+  "j.tohme@cgiar.org"
 ) %>%
   detailed_entries(where = Contact,
                    with = Name,
